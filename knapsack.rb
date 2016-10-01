@@ -19,7 +19,7 @@ class Knapsack
   end
 
   def dp i, max_w
-    return @memo[i][max_w] if @memo[i] and @memo[i][max_w]
+    return @memo[i][max_w] if @memo[i][max_w]
 
     @memo[i][max_w] = if i.eql? @list_size || max_w.eql?(0)
                         0
